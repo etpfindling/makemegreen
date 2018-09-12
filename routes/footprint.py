@@ -16,6 +16,25 @@ def compute():
                     'waste_footprint': 560,
                     'water_footprint': 1200})
 
+    result = dict({"footprints": [
+                   {
+                       "id": 1,
+                       "footprint_type": "carbon",
+                       "footprint_value": 80
+                   },
+                   {
+                       "id": 2,
+                       "footprint_type": "waste",
+                       "footprint_value": 560
+                   },
+                   {
+                       "id": 3,
+                       "footprint_type": "water",
+                       "footprint_value": 1280
+                   }
+                 ]
+                })
+
     return jsonify(result)
 
 
